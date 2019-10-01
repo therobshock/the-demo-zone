@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic web site with all the stuff">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Robert Bolton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Project</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="top-bar">
+        <a href="https://therobshock.github.io/2019-06-portfolio/" class="ext-link">Portfolio</a>
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>  
+        <div class="login-links">
+            <div class="login" id="login-link" onclick="openLogin()">Login</div>
+            <div class="signup" id="signup-link" onclick="openSignup()">SignUp</div>
+        </div>  
+    </div>
+    <div class="nav-banner">
+        <h1>Nav Banner</h1>
+        <div class="nav-links">
+            <div class="nav-item">
+                <button class="nav-button">Link</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <button class="nav-button">Link</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <button class="nav-button">Link</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <button class="nav-button">Link</button>
+                <ul class="dropdown-list">
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                    <li class="dropdown-item">Item</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-side">Column</div>
+        <div class="col col-mid">Column</div>
+        <div class="col col-side">Column</div>
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-login" class="close" onclick="closeLogin()">&times;</span>
+            <h3>Login</h3>
+            <form action="login">
+                <label for="username">Username</label>
+                <br>
+                <input type="text" name="username" id="username">
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="password">
+                <br>
+                <input type="button" value="Submit" id="login-button">
+            </form>
+        </div>
+    </div>
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-signup" class="close" onclick="closeSignup()">&times;</span>
+            <h3>Sign Up</h3>
+            <form action="signup">
+                <label for="username">Username</label>
+                <br>
+                <input type="text" name="username" id="username">
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="password">
+                <br>
+                <label for="confirm">Confirm</label>
+                <br>
+                <input type="password" name="confirm" id="confirm">
+                <br>
+                <input type="button" value="Submit" id="signup-button" onclick="closeSignup()">
+            </form>
+        </div>
+    </div>
+    <script src="../assets/js/logic.js"></script>
+</body>
+</html>
