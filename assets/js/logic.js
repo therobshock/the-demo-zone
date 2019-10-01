@@ -2,6 +2,7 @@ const loginModal = document.getElementById("login-modal");
 const signupModal = document.getElementById("signup-modal");
 
 
+
 function openLogin() {
     loginModal.style.display = "block";
 }
@@ -20,4 +21,10 @@ function closeSignup() {
 
 function testFunction() {
     console.log("Test");
+}
+
+document.getElementsByTagName("button").onclick = function() {
+    
+    console.log("click");
+    
 }
