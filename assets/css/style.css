@@ -47,6 +47,7 @@
                 .dropdown-item {
                     padding: 10px;
                 }
+                .show {display:block;}
 
 .row {
     display: flex;

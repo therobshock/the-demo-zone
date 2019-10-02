@@ -23,8 +23,7 @@ function testFunction() {
     console.log("Test");
 }
 
-document.getElementsByTagName("button").onclick = function() {
-    
-    console.log("click");
-    
+function showDropdown(){
+    document.this.nextElementSibling.classList.toggle("show"); // this is not working
 }
+  
